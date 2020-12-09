@@ -23,7 +23,9 @@ var Topbar = (props) => (
                 <a href="#">Link</a>
             </Navigation>
         </Drawer>
+
         <Content />
+
     </Layout>
 </div>
 

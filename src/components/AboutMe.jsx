@@ -10,7 +10,7 @@ var AboutMe = (props) => (
 <div style={{height: '50em', position: 'relative'}}>
 <img src="https://media-exp1.licdn.com/dms/image/C5603AQEkqVhPlaXRVw/profile-displayphoto-shrink_400_400/0/1520289381220?e=1613001600&v=beta&t=9qDfLnEpZg-yK8Pw0Y2qKVeTrUCo9qmI0J7PeTfEBEI" alt="Portrait Pic" className='Portrait-pic'/>
 
-  <div className="Banner-bar">
+  <div className="Banner-bar" id="onload-AboutMe">
   <h1 className = "Banner-text">Full-Stack Software Engineer</h1>
   <div className ="Icons"><FaLinkedin/> | <FaGithub/> | <AiOutlineMail/></div>
   </div>

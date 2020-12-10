@@ -135,3 +135,30 @@ font-weight: bold;
   text-align: left;
   font-family: 'Courier New', Courier, monospace;
 }
+
+
+#onload-AboutMe {
+animation-name: fadeinonload;
+animation-duration: 4s;
+}
+
+@keyframes fadeinonload {
+  from {opacity: 0;}
+  to {opacity: 0.8;}
+}
+
+/* #onload-AboutMe {
+  animation: 1s ease-out 0s 1 fadeinonload;
+
+  background: #333;
+  padding: 30px;
+  }
+
+  @keyframes fadeinonload {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  } */

@@ -3,7 +3,7 @@ import { Footer, FooterSection, FooterDropDownSection, FooterLinkList } from 're
 
 var BottomBar = (props) => (
 
-<Footer size="mega">
+<Footer size="mega" id="onload-TopBar">
     <FooterSection type="middle">
         <FooterDropDownSection title="Features">
             <FooterLinkList>

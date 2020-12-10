@@ -136,16 +136,71 @@ font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
 }
 
+#onload-Headshot {
+  animation-name: fadeinHeadshot;
+  animation-duration: 2s;
+  }
+
+  @keyframes fadeinHeadshot {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 #onload-AboutMe {
-animation-name: fadeinonload;
-animation-duration: 4s;
+animation-name: fadeinAboutMe;
+animation-duration: 2.5s;
 }
 
-@keyframes fadeinonload {
-  from {opacity: 0;}
-  to {opacity: 0.8;}
+@keyframes fadeinAboutMe {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
+
+
+#onload-TopBar {
+  animation-name: fadeinTopBar;
+  animation-duration: 1.5s;
+  }
+
+  @keyframes fadeinTopBar {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
+  #onload-Primary {
+    animation-name: fadeinPrimary;
+    animation-duration: 3.5s;
+    }
+
+    @keyframes fadeinPrimary {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
 
 /* #onload-AboutMe {
   animation: 1s ease-out 0s 1 fadeinonload;

@@ -7,7 +7,7 @@ var Projects = (props) => (
 
 
 
-<div className='Projects'>
+<div className='Projects' id="onload-Primary">
 <div className='Project-one'></div>
 <div className='Project-two'></div>
 <div className='Project-three'></div>

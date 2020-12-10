@@ -133,6 +133,7 @@ font-weight: bold;
 .AboutMe-ThanksForStoppingBy{
   font-size: 40px;
   text-align: left;
+  margin-left: 1em;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -217,3 +218,39 @@ animation-duration: 2.5s;
       transform: translateX(0);
     }
   } */
+
+  .Resume-CareerTimeline {
+    width: 75%;
+    /* border-left-style: solid;
+    border-left-width: 6px;
+    border-left-color: seagreen; */
+    height: 10em;
+    margin: auto;
+    position: relative;
+  }
+
+  .Resume-Icon {
+    text-align: left;
+    position: absolute;
+    left: 4.5%;
+    border-radius: 40%;
+    border-color: #29522d;
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    height: 0.75em;
+    width: 0.75em;
+    top:50%
+  }
+
+  .Resume-Trail {
+
+    position: absolute;
+    left: 5%;
+    background-color: #29522d;
+    height: 100%;
+    width: 6px;
+    border-color: palegreen;
+    border-width: 1px;
+    border-style: solid;
+  }

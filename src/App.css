@@ -48,7 +48,7 @@
 
 .Banner-bar {
   width: 75%;
-  background-color: olive;
+  background-color: #29522d;
   opacity: 0.8;
   margin: auto;
   border-radius: 10px;
@@ -68,13 +68,8 @@ font-weight: bold;
 }
 
 .Projects {
-  background-color: #282c34;
-  /* min-height: 100vh; */
-  /* display: flex; */
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin); */
+  /* background-color: #282c34; */
+  background-image: url("https://evatronix.com/images/en/offer/printed-circuits-board/Evatronix_Printed_Circuits_Board_01_1920x1080.jpg");
   padding: 15px;
   display: grid;
   margin: auto;
@@ -89,7 +84,6 @@ font-weight: bold;
   grid-template-columns: 1fr;
   gap: 15px 10px;
   justify-items: center;
-
 }
 
 .Project-one {
@@ -123,3 +117,21 @@ font-weight: bold;
   height: 5em;
 }
 
+.AboutMe-intro{
+  width: 75%;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  height: auto;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.AboutMe-ThanksForStoppingBy{
+  font-size: 40px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}

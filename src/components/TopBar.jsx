@@ -5,9 +5,9 @@ var Topbar = (props) => (
 
 
 
-<div style={{height: '300px', position: 'relative'}}>
-    <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-        <Header transparent title="Title" style={{color: 'white'}}>
+<div style={{height: '250px', position: 'relative'}}>
+    <Layout style={{background: 'url(https://iso.500px.com/wp-content/uploads/2018/02/500px_blog_landscape_photography_quest.jpg) center / cover'} }>
+        <Header transparent title="Title" style={{color: 'white'} }>
             <Navigation>
                 <a href="#">Link</a>
                 <a href="#">Link</a>

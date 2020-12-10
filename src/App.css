@@ -227,6 +227,7 @@ animation-duration: 2.5s;
     height: 10em;
     margin: auto;
     position: relative;
+
   }
 
   .Resume-Icon {
@@ -253,4 +254,26 @@ animation-duration: 2.5s;
     border-color: palegreen;
     border-width: 1px;
     border-style: solid;
+
+  }
+
+  .Resume-OrgDiv {
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    top: 50%
+  }
+
+  .Resume-OrgName {
+    text-shadow: gray;
+    color: #29522d;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .Resume-SkillChip {
+    text-shadow: gray;
+    color: #29522d;
+    font-size: large;
+    font-weight: bold;
   }

@@ -56,14 +56,14 @@
 
 .Banner-text {
 color: white;
-font-size: 50px;
+font-size: 44px;
 font-weight: bold;
 }
 
 .Icons {
   color: white;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 44px;
   padding-bottom: 5px;
 }
 
@@ -202,32 +202,11 @@ animation-duration: 2.5s;
       }
     }
 
-
-/* #onload-AboutMe {
-  animation: 1s ease-out 0s 1 fadeinonload;
-
-  background: #333;
-  padding: 30px;
-  }
-
-  @keyframes fadeinonload {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  } */
-
   .Resume-CareerTimeline {
     width: 75%;
-    /* border-left-style: solid;
-    border-left-width: 6px;
-    border-left-color: seagreen; */
-    height: 10em;
     margin: auto;
     position: relative;
-
+    height: 13em;
   }
 
   .Resume-Icon {
@@ -254,6 +233,7 @@ animation-duration: 2.5s;
     border-color: palegreen;
     border-width: 1px;
     border-style: solid;
+    height: 15em;
 
   }
 
@@ -270,6 +250,12 @@ animation-duration: 2.5s;
     font-size: large;
     font-weight: bold;
   }
+  .Resume-Dates {
+    text-shadow: gray;
+    color: #29522d;
+    font-size: small;
+    font-weight: bold;
+  }
 
   .Resume-SkillChip {
     text-shadow: gray;
@@ -277,3 +263,21 @@ animation-duration: 2.5s;
     font-size: large;
     font-weight: bold;
   }
+
+  .Resume-Education {
+    width: 75%;
+    /* border-left-style: solid;
+    border-left-width: 6px;
+    border-left-color: seagreen; */
+    height: 10em;
+    margin: auto;
+    position: relative;
+    margin-top: 5em;
+
+  }
+
+#Resume-JobFormatBox {
+  margin: auto;
+  position: relative;
+  height: 40vh;
+}

@@ -1,6 +1,6 @@
 /* eslint-disable array-callback-return */
 // const Listing = require('./index.js');
-const Places = require('./sdc/mongodb-schema.js');
+const Places = require('./mongodb-schema.js');
 
 //change vack to index.js to fix ui
 

@@ -14,7 +14,7 @@ var Resume = (props) => (
 
   <div style={{ height: '100em', position: 'relative' }} className="AboutMe-intro" id="onload-Primary">
 
-    <h1 className="AboutMe-ThanksForStoppingBy">Resume</h1>
+<a name="Resume"><h1 className="AboutMe-ThanksForStoppingBy">Resume</h1></a>
 
     <div className="Resume-CareerTimeline" id="JobFormatBox">
       <p className="Resume-OrgName">Work Experience</p>
@@ -33,7 +33,7 @@ var Resume = (props) => (
       <div className="Resume-Icon" />
       <div className="Resume-OrgDiv">
         <p className="Resume-OrgName">Senior Product Marketing Manager</p>
-        <p className="Resume-OrgName">BrightTALK</p>
+        <p className="Resume-OrgName">BrightTALK (Acquired by TechTarget)</p>
         <p className="Resume-Dates">2017-2020</p>
         <div className="Resume-SkillChip"><Chip><DiJavascript1 /> Javascript</Chip>   <Chip><DiHtml5 /> HTML/CSS</Chip> <Chip><DiMysql /> MySQL</Chip> <Chip><SiGoogleanalytics /> Google Analytics</Chip> <Chip><SiMarketo /> Marketo</Chip> <Chip><FaSalesforce /> Salesforce</Chip> <Chip><FaJira /> Jira</Chip> <Chip><FaWordpress /> WordPress</Chip> <Chip><SiAdobephotoshop /> Photoshop</Chip></div>
       </div>
@@ -44,7 +44,7 @@ var Resume = (props) => (
       <div className="Resume-Icon" />
       <div className="Resume-OrgDiv">
         <p className="Resume-OrgName">Senior Marketing Operations Specialist</p>
-        <p className="Resume-OrgName">BrightTALK</p>
+        <p className="Resume-OrgName">BrightTALK (Acquired by TechTarget)</p>
         <p className="Resume-Dates">2014-2017</p>
         <div className="Resume-SkillChip"><Chip><DiJavascript1 /> Javascript</Chip> <Chip><DiHtml5 /> HTML/CSS</Chip> <Chip><DiMysql /> MySQL</Chip> <Chip><SiGoogleanalytics /> Google Analytics</Chip> <Chip><SiMarketo /> Marketo</Chip> <Chip><FaSalesforce /> Salesforce</Chip> <Chip><FaJira /> Jira</Chip> <Chip><FaWordpress /> WordPress</Chip> <Chip><DiPython /> Python</Chip></div>
       </div>
@@ -77,7 +77,7 @@ var Resume = (props) => (
       <div className="Resume-Trail" />
       <div className="Resume-Icon" />
       <div className="Resume-OrgDiv">
-        <p className="Resume-OrgName">University of California, Santa Cruz</p>
+      <p className="Resume-OrgName">University of California, Santa Cruz</p>
         <p className="Resume-OrgName">Bachelors in Business Management Economics<br></br>Minor in Technology &#38; Information Management</p>
         <p className="Resume-Dates">2008-2013</p>
         <div className="Resume-SkillChip"><Chip><DiJava /> Java</Chip> <Chip><DiPython /> Python</Chip> <Chip><BiStats /> R</Chip>  <Chip><GrOptimize /> LINGO</Chip> <Chip><DiHtml5 /> HTML/CSS</Chip> <Chip><DiMysql /> MySQL</Chip></div>

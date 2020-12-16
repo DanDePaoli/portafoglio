@@ -4,44 +4,28 @@ import { Footer, FooterSection, FooterDropDownSection, FooterLinkList } from 're
 var BottomBar = (props) => (
 
 <Footer size="mega" id="onload-TopBar">
+<a name="Contact"></a>
     <FooterSection type="middle">
-        <FooterDropDownSection title="Features">
+    <FooterDropDownSection title="Hello">
             <FooterLinkList>
-                <a href="#">About</a>
-                <a href="#">Terms</a>
-                <a href="#">Partners</a>
-                <a href="#">Updates</a>
+                <a href="#Hello">Hello</a>
             </FooterLinkList>
         </FooterDropDownSection>
         <FooterDropDownSection title="Details">
             <FooterLinkList>
-                <a href="#">Specs</a>
-                <a href="#">Tools</a>
-                <a href="#">Resources</a>
+                <a href="#Resume">Resume</a>
             </FooterLinkList>
         </FooterDropDownSection>
         <FooterDropDownSection title="Technology">
             <FooterLinkList>
-                <a href="#">How it works</a>
-                <a href="#">Patterns</a>
-                <a href="#">Usage</a>
-                <a href="#">Products</a>
-                <a href="#">Contracts</a>
+                <a href="#Contact">Contact</a>
             </FooterLinkList>
         </FooterDropDownSection>
         <FooterDropDownSection title="FAQ">
             <FooterLinkList>
-                <a href="#">Questions</a>
-                <a href="#">Answers</a>
-                <a href="#">Contact Us</a>
+                <a href="#Hello">Back To Top</a>
             </FooterLinkList>
         </FooterDropDownSection>
-    </FooterSection>
-    <FooterSection type="bottom" logo="Title">
-        <FooterLinkList>
-            <a href="#">Help</a>
-            <a href="#">Privacy & Terms</a>
-        </FooterLinkList>
     </FooterSection>
 </Footer>
 

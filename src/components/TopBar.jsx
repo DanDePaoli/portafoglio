@@ -7,20 +7,20 @@ var Topbar = (props) => (
 
 <div id="onload-TopBar" style={{height: '250px', position: 'relative'}}>
     <Layout style={{background: 'url(https://iso.500px.com/wp-content/uploads/2018/02/500px_blog_landscape_photography_quest.jpg) center / cover'} }>
-        <Header transparent title="Title" style={{color: 'white'} }>
+        <Header transparent title="Welcome" style={{color: 'white'} }>
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <a href="#Hello">Hello</a>
+                <a href="#Resume">Resume</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Contact">Contact</a>
             </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Welcome">
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <a href="#Hello">Hello</a>
+                <a href="#Resume">Resume</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Contact">Contact</a>
             </Navigation>
         </Drawer>
 

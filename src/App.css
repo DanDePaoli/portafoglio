@@ -69,31 +69,36 @@ font-weight: bold;
 
 .Projects {
   /* background-color: #282c34; */
-  background-image: url("https://evatronix.com/images/en/offer/printed-circuits-board/Evatronix_Printed_Circuits_Board_01_1920x1080.jpg");
+  /* background-image: url("https://evatronix.com/images/en/offer/printed-circuits-board/Evatronix_Printed_Circuits_Board_01_1920x1080.jpg"); */
   padding: 15px;
-  display: grid;
+  /* display: grid; */
   margin: auto;
   border-width: thick;
-  grid-template-areas: "a"
+  /* grid-template-areas: "a"
                        "b"
-                       "c";
+                       "c"; */
   /* grid-template-rows: auto; */
 
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr;
 
   grid-template-columns: 1fr;
   gap: 15px 10px;
   justify-items: center;
+  border-color: grey;
+  border-style: solid; */
 }
 
 .Project-one {
-  display: grid;
+  /* display: grid;
   grid-template-areas: 'a';
   border-color:azure;
   border-width: 5px;
   border-style: dotted;
   width: 85%;
-  height: 5em;
+  height: 5em; */
+  height: auto;
+  width: 1200px;
+  margin: auto;
 
 }
 
@@ -220,7 +225,7 @@ animation-duration: 2.5s;
     border-style: solid;
     height: 0.75em;
     width: 0.75em;
-    top:50%
+    top:52%
   }
 
   .Resume-Trail {

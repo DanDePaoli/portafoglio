@@ -13,7 +13,11 @@ var Projects = (props) => (
 
 <Carousel/>
 </div>
-<div className='Project-two'></div>
+<div className='Project-two'>
+
+<Calendar/>
+
+</div>
 <div className='Project-three'></div>
 
 </div>

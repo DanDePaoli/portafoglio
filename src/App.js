@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/Calendar/style.css';
 
 import Topbar from './components/TopBar.jsx';
 import BottomBar from './components/BottomBar.jsx';

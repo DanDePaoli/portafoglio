@@ -103,23 +103,29 @@ font-weight: bold;
 }
 
 .Project-two {
-  display: grid;
+  /* display: grid;
   grid-template-areas: 'b';
   border-color: azure;
   border-width: 5px;
   border-style: dotted;
   width: 85%;
-  height: 5em;
+  height: 5em; */
+  height: auto;
+  width: auto;
+  margin: auto;
 }
 
 .Project-three {
-  display: grid;
+  /* display: grid;
   grid-template-areas: 'c';
   border-color: azure;
   border-width: 5px;
   border-style: dotted;
   width: 85%;
-  height: 5em;
+  height: 5em; */
+  height: 250px;
+  width: auto;
+  margin: auto;
 }
 
 .AboutMe-intro{

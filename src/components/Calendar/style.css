@@ -64,7 +64,7 @@ margin-bottom: 24px;
 .PlaceInfo-Right {
   font-size: 14px;
   line-height: 18px;
-  margin-left: 48%
+  margin-left: 45%;
   }
 
 .PlaceInfo-Fee {
@@ -151,11 +151,16 @@ color: rgb(113, 113, 113);
     flex-grow: 1;
     white-space: normal;
     text-decoration: underline;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
   }
 
   .Fees-EntryRight {
     padding-left: 16px;
     white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px;
   }
 
   .Fees-Total {
@@ -164,6 +169,7 @@ color: rgb(113, 113, 113);
     margin: 16px 0px 0px;
     padding: 24px 0px 12px;
     display: flex;
+    font-size: 16px;
   }
 
   .Fees-TotalLeft {
@@ -171,6 +177,7 @@ color: rgb(113, 113, 113);
     flex-grow: 1;
     white-space: normal;
     font-weight: 800;
+    text-align: left;
   }
 
   .Fees-TotalRight {
@@ -679,6 +686,7 @@ color: #989898;
 
 .OptionsDates-Container{
   display: flex;
+  text-align: left;
 }
 
 .OptionsDates-CheckIn{
@@ -722,7 +730,7 @@ color: #989898;
   position: absolute;
   top: 50px;
   right: -10px;
-  width: 661px;
+  /* width: 661px; */
   z-index: 3;
   min-height: 460px;
   background: rgb(255, 255, 255);
@@ -826,6 +834,7 @@ color: #989898;
   right: 12px;
   font-size: 10px;
   font-weight: 800;
+  text-align: left;
 }
 
 .OptionsGuests-GuestNum {
@@ -834,6 +843,7 @@ color: #989898;
   padding-bottom: 10px;
   font-size: 14px;
   line-height: 18px;
+  text-align: left;
 }
 
 .OptionsGuests-DownUpArrow {

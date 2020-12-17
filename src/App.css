@@ -293,3 +293,69 @@ animation-duration: 2.5s;
   position: relative;
   height: 40vh;
 }
+
+.Projects-Bullets {
+  text-align: left;
+  align-items: left;
+
+}
+
+.Projects-Transition {
+  background-color: #29522d;
+  opacity: 0.8;
+  border-style: solid;
+  height: 10em;
+  font-weight: 600;
+  color: white;
+}
+
+.Projects-ProjectOuter {
+  width: 100%;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  height: auto;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1.Projects-ProjectTitle {
+  font-size: 26px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #29522d;
+}
+
+.Projects-ProjectInner {
+  position: relative;
+  margin: auto;
+  height: 10em;
+}
+
+.Projects-ProjectInnerLeft {
+  position: absolute;
+  text-align: left;
+  width: 75%;
+  left: 0;
+}
+
+.Projects-ProjectInnerRight {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  width: 25%;
+  right: 0;
+  color: #282c34;
+}
+
+.Projects-GitHub{
+  color: black;
+  border-radius: 10px;
+  font-size: 66px;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-width: 3px;
+}

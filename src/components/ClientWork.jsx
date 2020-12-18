@@ -46,7 +46,7 @@ var ClientWork = (props) => (
 
           </div>
         </div>
-        <div className='EqualPadding'>  <ClientGallery/> </div>
+        <div className='ClientWork-ProjectPadding'>  <ClientGallery/> </div>
 
       </div>
     </div>

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const GalOuterContainer = styled.div`
 width: 85%;
-padding: 1em;
 height: auto;
 position: relative;
 margin: auto;
@@ -15,6 +14,7 @@ const GalContainerMain = styled.div`
 float: left;
 width: 65%;
 height: 28em;
+border-radius: 15px;
 overflow: hidden;
 `;
 
@@ -80,8 +80,8 @@ class OliGallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainImage: "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryEditor.jpg",
-      images: [ "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryEditor.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryGalleryExperience.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryImageDetails.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryMyExhibit.jpg" ]
+      mainImage: "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryGalleryExperience.jpg",
+      images: [ "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryGalleryExperience.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryEditor.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryImageDetails.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryMyExhibit.jpg" ]
     }
   }
 

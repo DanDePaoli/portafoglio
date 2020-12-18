@@ -735,6 +735,7 @@ color: #989898;
   /* width: 661px; */
   z-index: 3;
   min-height: 460px;
+  background-color: rgb(235, 235, 235);;
   background: rgb(255, 255, 255);
   border-radius: 16px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;

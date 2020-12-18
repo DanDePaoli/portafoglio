@@ -217,14 +217,14 @@ class Calendar extends React.Component {
           <div className='Calendar-WeekDaysContainer' style={{left: '0px'}}>
           <table className='Calendar-WeekDays'>
               <tr className='Calendar-WeekTable'>
-              <th>&nbsp;&nbsp;&nbsp;Su&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Mu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Tu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;We&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Th&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Fr&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Sa&nbsp;&nbsp;&nbsp;</th>
+              <th>&nbsp;&nbsp;&nbsp;&nbsp;Su&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Mu&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Tu&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;We&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Th&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Fr&nbsp;&nbsp;</th><th>&nbsp;&nbsp;Sa&nbsp;&nbsp;&nbsp;&nbsp;</th>
               </tr>
             </table>
           </div>
           <div className='Calendar-WeekDaysContainer' style={{right: '0px'}}>
             <table className='Calendar-WeekDays'>
               <tr className='Calendar-WeekTable'>
-              <th>&nbsp;&nbsp;&nbsp;Su&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Mu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Tu&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;We&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Th&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;Fr&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Sa&nbsp;&nbsp;&nbsp;</th>
+              <th>&nbsp;&nbsp;Su&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Mu&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Tu&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;We&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Th&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;Fr&nbsp;&nbsp;</th><th>&nbsp;&nbsp;Sa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
               </tr>
             </table>
           </div>

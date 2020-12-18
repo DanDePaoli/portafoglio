@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import Carousel from './Carousel.jsx';
-import Calendar from './Calendar.jsx';
+import ClientGallery from './ClientGallery.jsx';
 import { FaGithub, FaAws } from "react-icons/fa";
 
 import { Chip } from 'react-mdl';
@@ -23,7 +22,7 @@ var ClientWork = (props) => (
 
         <div className="Projects-ProjectInner">
           <div className="Projects-ProjectInnerLeft">
-            <h1 className="Projects-ProjectTitle">Client: Oli Gallery</h1>
+            <h1 className="Projects-ProjectTitle">Client: Oli Gallery <img className='ClientWork-Logo' src="https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-Logo-STACKED-Brown-Gallery.png"></img></h1>
             <ul className="Projects-Bullets">
               <li>Coming Soon</li>
               <li>Coming Soon</li>
@@ -47,9 +46,8 @@ var ClientWork = (props) => (
 
           </div>
         </div>
-
+        <ClientGallery/>
       </div>
-
     </div>
     <div className='Project-two'>
 
@@ -86,6 +84,7 @@ var ClientWork = (props) => (
       </div>
     </div>
     <div className='Project-three'></div>
+
 
   </div>
 

@@ -383,3 +383,9 @@ h1.Projects-ProjectTitle {
   padding: 1em;
 }
 
+.EqualPadding {
+  margin: auto;
+  padding-top: 3em;
+  padding-left: 6em;
+
+}

@@ -50,8 +50,8 @@ const OuterWrapper = styled.div`
   margin-left: auto;
   padding-bottom: 40px;
   padding-top: 40px;
-  // max-width:1280px;
-  max-width: auto;
+  max-width: 1200px;
+  // max-width: auto;
 `;
 
 class CarouselApp extends React.Component {

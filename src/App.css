@@ -321,6 +321,7 @@ animation-duration: 2.5s;
   height: auto;
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
 }
 
 h1.Projects-ProjectTitle {
@@ -332,14 +333,16 @@ h1.Projects-ProjectTitle {
 .Projects-ProjectInner {
   position: relative;
   margin: auto;
-  height: 10em;
+  height: 14em;
 }
 
 .Projects-ProjectInnerLeft {
   position: absolute;
   text-align: left;
-  width: 75%;
+  width: 65%;
   left: 0;
+  margin: auto;
+  padding:15px;
 }
 
 .Projects-ProjectInnerRight {
@@ -348,14 +351,23 @@ h1.Projects-ProjectTitle {
   align-items: center;
   width: 25%;
   right: 0;
-  color: #282c34;
+  margin: auto;
+  padding:15px;
 }
 
 .Projects-GitHub{
-  color: black;
+  /* color: black; */
+  background-color: black;
   border-radius: 10px;
-  font-size: 66px;
+  font-size: 22;
   padding-bottom: 5px;
   border-style: solid;
   border-width: 3px;
+  border-color: white;
+}
+
+#GreatEscapes {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color:rgb(230, 30, 77);
+  font-weight: 600;
 }

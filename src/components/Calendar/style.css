@@ -64,7 +64,8 @@ margin-bottom: 24px;
 .PlaceInfo-Right {
   font-size: 14px;
   line-height: 18px;
-  margin-left: 45%;
+  margin-left: 43%;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   }
 
 .PlaceInfo-Fee {
@@ -84,6 +85,7 @@ line-height: 20px;
 white-space: nowrap;
 padding-left: 4px;
 color: #222222;
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
 }
 
 
@@ -94,12 +96,12 @@ color: #222222;
  }
 
 .PlaceInfo-Rating {
- padding-left: 4px;
+ padding-left: 3px;
 font-weight: 600;
 }
 
 .PlaceInfo-Reviews {
-padding-left: 4px;
+padding-left: 3px;
 color: rgb(113, 113, 113);
 }
 

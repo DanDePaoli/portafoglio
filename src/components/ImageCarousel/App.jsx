@@ -26,18 +26,23 @@ const InnerWrapper = styled.div`
 `;
 
 const MiddleWrapper = styled.div`
-  padding-left: 80px;
-  padding-right: 80px;
+  // padding-left: 80px;
+  // padding-right: 80px;
+  //adjusted for site width
+  padding-left: 12px;
+  padding-right: 12px;
 `;
 
 const OuterDiv = styled.div`
   display: flex;
+  width: 100%;
   background-color: rgb(247, 247, 247);
   border-bottom: 1px solid rgb(221, 221, 221);
   display: block;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
-  margin: 0;
+  margin: auto;
   padding: 0;
+  border-radius: 0 0 10px 10px;
 `;
 
 const OuterWrapper = styled.div`

@@ -92,7 +92,7 @@ var Projects = (props) => (
 
       </div>
     </div>
-    <div className='Project-three'></div>
+    {/* <div className='Project-three'></div> */}
 
   </div>
 

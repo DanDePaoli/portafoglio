@@ -52,6 +52,7 @@
   opacity: 0.8;
   margin: auto;
   border-radius: 10px;
+  margin-bottom: 3em;
 }
 
 .Banner-text {
@@ -135,7 +136,6 @@ font-weight: bold;
   border-width: 1px;
   margin: auto;
   border-radius: 10px;
-  margin-top: 15px;
   text-align: center;
   height: auto;
   font-size: 20px;
@@ -309,6 +309,7 @@ animation-duration: 2.5s;
   width: 90%;
   margin: auto;
   border-radius: 10px;
+  margin-top: 3em;
 }
 
 .Projects-ProjectOuter {
@@ -317,8 +318,9 @@ animation-duration: 2.5s;
   border-color: grey;
   border-width: 1px;
   margin: auto;
+  margin-top: 1.5em;
   border-radius: 10px;
-  margin-top: 15px;
+
   text-align: center;
   height: auto;
   font-size: 20px;
@@ -336,7 +338,8 @@ h1.Projects-ProjectTitle {
   position: relative;
   margin: auto;
   height: 14em;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
+  margin-top: 1em;
 }
 
 .Projects-ProjectInnerLeft {
@@ -353,9 +356,9 @@ h1.Projects-ProjectTitle {
   text-align: center;
   align-items: center;
   width: 25%;
+  bottom: 0;
   right: 0;
   margin: auto;
-  padding:15px;
 }
 
 .Projects-GitHub{

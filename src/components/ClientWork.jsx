@@ -24,10 +24,10 @@ var ClientWork = (props) => (
           <div className="Projects-ProjectInnerLeft">
             <h1 className="Projects-ProjectTitle">Client: Oli Gallery <img className='ClientWork-Logo' src="https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-Logo-STACKED-Brown-Gallery.png"></img></h1>
             <ul className="Projects-Bullets">
-              <li>Coming Soon</li>
-              <li>Coming Soon</li>
+              <li>Full-Stack Micro-Service with independent database, server, and API routes</li>
+              <li>Deployed a multi-server architecture leveraging an NGINX load balancer with AWS EC2 instances</li>
 
-              <li>Coming Soon</li>
+              <li>Developed an interactive, fully functioning site using JavaScript, React, and MySQL</li>
 
             </ul>
             <div className="Resume-SkillChip"><Chip><DiNodejsSmall /> Node.js</Chip> <Chip><DiReact /> React.js</Chip> <Chip><DiHtml5 /> HTML/CSS</Chip> <Chip><DiNodejsSmall /> Express</Chip> <Chip><DiMongodb /> MongoDB</Chip>  <Chip><FaAws /> AWS</Chip> <Chip><SiNginx /> NGINX</Chip></div>
@@ -39,7 +39,7 @@ var ClientWork = (props) => (
             <Card style={{ width: '12rem' }}>
               <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-                <Button variant="primary" className="Projects-GitHub">Let's Talk</Button>
+              <a href="https://github.com/DanDePaoli" target="_blank"><Button variant="primary" className="Projects-GitHub">Let's Talk</Button></a>
               </Card.Body>
             </Card>
 
@@ -74,7 +74,7 @@ var ClientWork = (props) => (
             <Card style={{ width: '12rem' }}>
               <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-                <Button variant="primary" className="Projects-GitHub">Let's Talk</Button>
+              <a href="https://github.com/DanDePaoli" target="_blank"><Button variant="primary" className="Projects-GitHub">Let's Talk</Button></a>
               </Card.Body>
             </Card>
 

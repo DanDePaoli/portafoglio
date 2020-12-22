@@ -12,11 +12,11 @@ var AboutMe = (props) => (
 
   <div className="Banner-bar" id="onload-AboutMe">
   <h1 className = "Banner-text">Daniel DePaoli <br></br>Full-Stack Software Engineer</h1>
-  <div className ="Icons"><FaLinkedin/> | <FaGithub/> | <AiOutlineMail/></div>
+  <div className ="Icons"><a href="https://www.linkedin.com/in/danieldepaoli/" target="_blank"><FaLinkedin/></a> | <a href="https://github.com/DanDePaoli" target="_blank"><FaGithub/></a> | <AiOutlineMail/></div>
   </div>
 <div className="AboutMe-intro" id="onload-Primary">
 <a name="Hello"></a>
-  <h1 className="AboutMe-ThanksForStoppingBy">Thanks for stoping by</h1>
+  <h1 className="AboutMe-ThanksForStoppingBy">Thanks for stopping by</h1>
 <p>I’m a passionate engineer and devout lifelong learner. I believe in challenge as the path to personal growth and business as a platform for change. After a successful 8 year stint working in marketing for tech startups I transitioned to software engineering. I deeply enjoy the analytical and creative challenge of building clean, scalable systems. Right now I work mostly with Javascript (Node, React, etc) and Python.</p>
 </div>
 

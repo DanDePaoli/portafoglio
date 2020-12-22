@@ -42,7 +42,7 @@ var Projects = (props) => (
             <Card style={{ width: '12rem' }}>
               <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-                <Button variant="primary" className="Projects-GitHub">Go To Code</Button>
+              <a href="https://github.com/DanDePaoli" target="_blank"><Button variant="primary" className="Projects-GitHub">Go To Code</Button></a>
               </Card.Body>
             </Card>
 
@@ -81,7 +81,7 @@ var Projects = (props) => (
             <Card style={{ width: '12rem' }}>
               <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-                <Button variant="primary" className="Projects-GitHub">Go To Code</Button>
+              <a href="https://github.com/DanDePaoli" target="_blank"><Button variant="primary" className="Projects-GitHub">Go To Code</Button></a>
               </Card.Body>
             </Card>
 

@@ -84,9 +84,6 @@ var ClientWork = (props) => (
 
       </div>
     </div>
-    <div className='Project-three'></div>
-
-
   </div>
 
 

@@ -6,22 +6,22 @@ var BottomBar = (props) => (
 <Footer size="mega" id="onload-TopBar">
 <a name="Contact"></a>
     <FooterSection type="middle">
-    <FooterDropDownSection title="Hello">
+    <FooterDropDownSection title="">
             <FooterLinkList>
                 <a href="#Hello">Hello</a>
             </FooterLinkList>
         </FooterDropDownSection>
-        <FooterDropDownSection title="Details">
+        <FooterDropDownSection title="">
             <FooterLinkList>
                 <a href="#Resume">Resume</a>
             </FooterLinkList>
         </FooterDropDownSection>
-        <FooterDropDownSection title="Technology">
+        <FooterDropDownSection title="">
             <FooterLinkList>
                 <a href="#Contact">Contact</a>
             </FooterLinkList>
         </FooterDropDownSection>
-        <FooterDropDownSection title="FAQ">
+        <FooterDropDownSection title="">
             <FooterLinkList>
                 <a href="#Hello">Back To Top</a>
             </FooterLinkList>

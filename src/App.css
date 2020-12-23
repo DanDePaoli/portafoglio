@@ -78,6 +78,7 @@ font-weight: bold;
 .Icons:hover {
   color: #29522d;
   background-color: white;
+  cursor: pointer;
 }
 
 
@@ -127,19 +128,6 @@ font-weight: bold;
   width: auto;
   margin: auto;
   position: relative;
-}
-
-.Project-three {
-  /* display: grid;
-  grid-template-areas: 'c';
-  border-color: azure;
-  border-width: 5px;
-  border-style: dotted;
-  width: 85%;
-  height: 5em; */
-  height: 250px;
-  width: auto;
-  margin: auto;
 }
 
 .AboutMe-intro{
@@ -389,6 +377,15 @@ h1.Projects-ProjectTitle {
   border-color: white;
 }
 
+.Projects-GitHub:hover {
+  color: white;
+  background-color: #29522d;
+  border-color: white;
+  cursor: pointer;
+}
+
+
+
 #GreatEscapes {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
   color:rgb(230, 30, 77);
@@ -422,4 +419,24 @@ h1.Projects-ProjectTitle {
   font-family: 'Courier New', Courier, monospace;
   max-width: 1200px;
 
+}
+
+
+.Contact {
+  background-color: #29522d;
+  opacity: 0.8;
+  border-style: solid;
+  height: 15em;
+  /* font-weight: 600; */
+  color: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 3em;
+  max-width: 1200px;
+}
+
+.Contact-Info {
+text-align: center;
+font-size: 28px;
 }

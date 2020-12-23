@@ -5,7 +5,7 @@ var Topbar = (props) => (
 
 
 
-<div id="onload-TopBar" style={{height: '250px', position: 'relative'}}>
+<div id="onload-TopBar" style={{height: '250px', position: 'relative', marginBottom: '2em' }}>
     <Layout style={{background: 'url(https://iso.500px.com/wp-content/uploads/2018/02/500px_blog_landscape_photography_quest.jpg) center / cover'} }>
         <Header transparent title="Welcome" style={{color: 'white'} }>
             <Navigation>

@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -62,12 +62,24 @@ font-size: 36px;
 font-weight: bold;
 }
 
-.Icons {
+.IconBar {
   color: white;
   border-radius: 10px;
   font-size: 44px;
   padding-bottom: 5px;
 }
+
+.Icons {
+  color: white;
+  border-radius: 10px;
+  font-size: 44px;
+}
+
+.Icons:hover {
+  color: #29522d;
+  background-color: white;
+}
+
 
 .Projects {
   /* background-color: #282c34; */
@@ -236,6 +248,7 @@ animation-duration: 2.5s;
     top:52%
   }
 
+
   .Resume-Trail {
 
     position: absolute;
@@ -391,5 +404,22 @@ h1.Projects-ProjectTitle {
   margin: auto;
   padding-left: 6em;
   padding-bottom: 1em;
+
+}
+
+.Clients-Outer {
+  width: 90%;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  margin: auto;
+  margin-top: 1.5em;
+  border-radius: 10px;
+  min-height: 22em;
+  text-align: center;
+  height: auto;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 1200px;
 
 }

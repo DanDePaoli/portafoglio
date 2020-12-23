@@ -52,7 +52,7 @@ var ClientWork = (props) => (
     </div>
     <div className='Project-two'>
 
-      <div className="Projects-ProjectOuter">
+      <div className="Clients-Outer">
 
 
         <div className="Projects-ProjectInner">

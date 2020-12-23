@@ -22,6 +22,9 @@ var ClientWork = (props) => (
 
         <div className="Projects-ProjectInner">
           <div className="Projects-ProjectInnerLeft">
+
+          <a name="OliGallery"></a>
+
             <h1 className="Projects-ProjectTitle">Client: Oli Gallery <img className='ClientWork-Logo' src="https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-Logo-STACKED-Brown-Gallery.png"></img></h1>
             <ul className="Projects-Bullets">
               <li>Full-Stack Micro-Service with independent database, server, and API routes</li>

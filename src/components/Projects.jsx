@@ -23,6 +23,9 @@ var Projects = (props) => (
 
         <div className="Projects-ProjectInner">
           <div className="Projects-ProjectInnerLeft">
+
+          <a name="Carousel"></a>
+
             <h1 className="Projects-ProjectTitle">Recommendation Carousel - <span id="GreatEscapes"><SiAirbnb />GreatEscapes</span></h1>
             <ul className="Projects-Bullets">
               <li>Full-Stack Micro-Service with independent database, server, and API routes</li>
@@ -61,6 +64,9 @@ var Projects = (props) => (
 
         <div className="Projects-ProjectInner">
           <div className="Projects-ProjectInnerLeft">
+
+          <a name="Calendar"></a>
+
             <h1 className="Projects-ProjectTitle">Reservation Calendar - <span id="GreatEscapes"><SiAirbnb />GreatEscapes</span></h1>
             <ul className="Projects-Bullets">
               <li>Full-Stack Micro-Service with independent database, server, and API routes</li>

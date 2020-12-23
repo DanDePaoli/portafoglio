@@ -23,7 +23,7 @@ var BottomBar = (props) => (
         </FooterDropDownSection>
         <FooterDropDownSection title="">
             <FooterLinkList>
-                <a href="#Hello">Back To Top</a>
+                <a href="#Top">Back To Top</a>
             </FooterLinkList>
         </FooterDropDownSection>
     </FooterSection>

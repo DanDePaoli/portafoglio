@@ -12,7 +12,7 @@ var Resume = (props) => (
 
 
 
-  <div style={{ height: '100em', position: 'relative' }} className="AboutMe-intro" id="onload-Primary">
+  <div className="Resume-Outer" id="onload-Primary">
 
 <a name="Resume"><h1 className="AboutMe-ThanksForStoppingBy">Resume</h1></a>
 

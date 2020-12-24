@@ -8,6 +8,11 @@ var AboutMe = (props) => (
 
 
   <div style={{ height: '54em', position: 'relative', marginBottom: '3em' }}>
+
+  <div className="AboutMe-Quote"  id="onload-Headshot">
+  <h1 className="AboutMe-Quote"><em>"The noblest pleasure is the joy of understanding"</em><br></br>-Leonardo Da Vinci</h1>
+  </div>
+
     <img id="onload-Headshot" src="https://media-exp1.licdn.com/dms/image/C5603AQEkqVhPlaXRVw/profile-displayphoto-shrink_400_400/0/1520289381220?e=1613001600&v=beta&t=9qDfLnEpZg-yK8Pw0Y2qKVeTrUCo9qmI0J7PeTfEBEI" alt="Portrait Pic" className='Portrait-pic' />
 
     <div className="Banner-bar" id="onload-AboutMe">
@@ -16,9 +21,7 @@ var AboutMe = (props) => (
     </div>
     <div className="AboutMe-intro" id="onload-Primary">
       <a name="Hello"></a>
-      <h1 className="AboutMe-ThanksForStoppingBy"><em>"The noblest pleasure is the joy of understanding"</em>  -Leonardo Da Vinci</h1>
-
-      <p>Dear reader, thanks for stopping by.  If you're here I can only assume you've come to see my portfolio.  I’m a passionate engineer and devout lifelong learner. I believe in challenge as the path to personal growth and business as a platform for change. After a successful 8 year stint working in marketing and product for tech startups I transitioned to software engineering.  While I am no Leonardo, I do believe in the importance of being a multi-dimensional professional as well as human being.</p>
+      <p className='AboutMe-intro-text'>Dear reader, thanks for stopping by.  This is a simple site I've thrown together to showcase my recent work, I hope you enjoy it.  While I am no Leonardo, I do believe in the importance of being a multi-dimensional professional and human.  It is this same hunger for knowledge that has led me to leave behind a successful former career in marketing and product at tech startups to pursue my passion for engineering.</p>
     </div>
 
   </div>

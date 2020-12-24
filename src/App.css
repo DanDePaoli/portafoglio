@@ -139,15 +139,34 @@ font-weight: bold;
   border-radius: 10px;
   text-align: center;
   height: auto;
-  font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
   max-width: 1200px;
 }
+
+.AboutMe-intro-text {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .AboutMe-ThanksForStoppingBy{
   font-size: 40px;
   text-align: left;
   margin-left: 1em;
   font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.AboutMe-Quote{
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
 }
 
 #onload-Headshot {
@@ -215,11 +234,27 @@ animation-duration: 2.5s;
       }
     }
 
+
+    .Resume-Outer{
+      width: 88%;
+      border-style: solid;
+      border-color: grey;
+      border-width: 1px;
+      margin: auto;
+      margin-top: 6em;
+      border-radius: 10px;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      max-width: 1200px;
+      height: 110em;
+      position: relative;
+    }
+
   .Resume-CareerTimeline {
     width: 75%;
     margin: auto;
     position: relative;
-    height: 13em;
+    height: 15em;
   }
 
   .Resume-Icon {
@@ -299,6 +334,9 @@ animation-duration: 2.5s;
 .Projects-Bullets {
   text-align: left;
   align-items: left;
+  font-size: 16px;
+  line-height: 1.1em;
+  margin-bottom: 0.8em;
 
 }
 
@@ -370,7 +408,7 @@ h1.Projects-ProjectTitle {
   /* color: black; */
   background-color: black;
   border-radius: 10px;
-  font-size: 22;
+  font-size: 16px;
   padding-bottom: 5px;
   border-style: solid;
   border-width: 3px;
@@ -400,7 +438,9 @@ h1.Projects-ProjectTitle {
 .ClientWork-ProjectPadding {
   margin: auto;
   padding-left: 6em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+
 
 }
 

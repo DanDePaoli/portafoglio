@@ -42,7 +42,7 @@ var ClientWork = (props) => (
             <Card style={{ width: '12rem' }}>
               <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-              <a href="https://github.com/DanDePaoli" target="_blank"><Button variant="primary" className="Projects-GitHub">Let's Talk</Button></a>
+              <a href="#Contact"><Button variant="primary" className="Projects-GitHub">Let's Talk</Button></a>
               </Card.Body>
             </Card>
 
@@ -77,7 +77,7 @@ var ClientWork = (props) => (
             <Card style={{ width: '12rem' }}>
               <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-              <a href="https://github.com/DanDePaoli" target="_blank"><Button variant="primary" className="Projects-GitHub">Let's Talk</Button></a>
+              <a href="#Contact"><Button variant="primary" className="Projects-GitHub">Let's Talk</Button></a>
               </Card.Body>
             </Card>
 

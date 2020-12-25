@@ -15,7 +15,13 @@ var ClientWork = (props) => (
 
 
   <div className='Projects' id="onload-Primary">
-    <div className="Projects-Transition"> <a name="Portfolio"><h1 className="AboutMe-ThanksForStoppingBy">Client Work</h1></a> </div>
+
+      <div className="ClientWork-Banner" id="onload-AboutMe">
+
+        <img src="https://ddpgithubprojects.s3-us-west-2.amazonaws.com/BluesDogs.JPG" className='ClientWork-Banner-IMG' />
+
+        <h1 className="AboutMe-Contact-Header">     <div className="Contact-Header">Client Work</div></h1> </div>
+
 
     <div className='Project-one'>
       <div className="Projects-ProjectOuter">

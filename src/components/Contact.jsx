@@ -9,7 +9,11 @@ var Contact = (props) => (
 
   <div style={{ height: 'auto', position: 'relative', marginBottom: '3em', PaddingBottom: '5em' }}>
 
-<div className="Contact" id="onload-AboutMe"> <a name="Contact"><h1 className="AboutMe-ThanksForStoppingBy">Contact<div className="Contact-Info"><br></br>Drop me a line at:   <strong><em>dan@dpao.dev</em></strong></div></h1></a> </div>
+    <div className="Contact" id="onload-AboutMe"> <a name="Contact">
+
+      <img src="https://ddpgithubprojects.s3-us-west-2.amazonaws.com/BridgeOut.JPG" className='Contact-Img' />
+
+      <h1 className="AboutMe-Contact-Header">     <div className="Contact-Header">Contact</div><div className="Contact-Info">Drop me a line at:   <strong><em>dan@dpao.dev</em></strong></div></h1></a> </div>
   </div>
 
 

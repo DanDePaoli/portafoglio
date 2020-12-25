@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One');
+
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Stencil+Text');
+
+@import url('https://fonts.googleapis.com/css?family=Stardos+Stencil');
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+@import url('https://fonts.googleapis.com/css?family=Piazzolla');
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -341,19 +353,18 @@ animation-duration: 2.5s;
 
 }
 
-.Projects-Transition {
+/* .Projects-Transition {
   background-color: #29522d;
   opacity: 0.8;
   border-style: solid;
   height: 10em;
-  /* font-weight: 600; */
   color: white;
   width: 90%;
   margin: auto;
   border-radius: 10px;
   margin-top: 3em;
   max-width: 1200px;
-}
+} */
 
 .Projects-ProjectOuter {
   width: 90%;
@@ -464,10 +475,8 @@ h1.Projects-ProjectTitle {
 
 
 .Contact {
-  background-color: #29522d;
-  opacity: 0.8;
   border-style: solid;
-  height: 15em;
+  height: 35em;
   /* font-weight: 600; */
   color: white;
   width: 90%;
@@ -475,9 +484,65 @@ h1.Projects-ProjectTitle {
   border-radius: 10px;
   margin-top: 3em;
   max-width: 1200px;
+  position: relative;
+
 }
+
+.Contact-Img {
+  object-fit: fill;
+  height: 35em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Contact-Header {
+  text-align: left;
+  font-size: 160px;
+  opacity: 0.7;
+  width: 100%;
+  position: absolute;
+  /* background-color: #29522d; */
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  padding: 0.3em;
+  font-family: 'Stardos Stencil', Courier, monospace;
+  }
 
 .Contact-Info {
 text-align: center;
 font-size: 28px;
+opacity: 0.8;
+position: absolute;
+background-color: #29522d;
+top: 50%;
+left: 15%;
+border-radius: 10px;
+padding: 1em 1em 1em 1em;
+}
+
+
+.ClientWork-Banner {
+  border-style: solid;
+  height: 20em;
+  /* font-weight: 600; */
+  color: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 3em;
+  max-width: 1200px;
+  position: relative;
+
+}
+
+.ClientWork-Banner-IMG {
+  object-fit: fill;
+  height: 20em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
 }

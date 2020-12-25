@@ -16,7 +16,17 @@ var Projects = (props) => (
 
 
   <div className='Projects' id="onload-Primary">
-    <div className="Projects-Transition"> <a name="Portfolio"><h1 className="AboutMe-ThanksForStoppingBy">Recent Projects</h1></a> </div>
+
+
+    <div className="ClientWork-Banner" id="onload-AboutMe"> <a name="Portfolio">
+
+      <img src="https://ddpgithubprojects.s3-us-west-2.amazonaws.com/IcelandLayercake2.jpg" className='ClientWork-Banner-IMG' />
+
+      <h1 className="AboutMe-Contact-Header">     <div className="Contact-Header">Recent Projects</div></h1></a> </div>
+
+
+
+
 
     <div className='Project-one'>
       <div className="Projects-ProjectOuter">

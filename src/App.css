@@ -67,7 +67,32 @@
   border-radius: 10px;
   margin-bottom: 3em;
   max-width: 1200px;
+
 }
+
+.BannerBar-IMG {
+  height: 15em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+
+}
+
+.BannerBar-Inner {
+  text-align: left;
+  font-size: 44px;
+  opacity: 0.7;
+  width: 100%;
+  position: absolute;
+  /* background-color: #29522d; */
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  padding: 0.3em;
+  font-family: 'Stardos Stencil', Courier, monospace;
+  }
+
 
 .Banner-text {
 color: white;
@@ -526,7 +551,7 @@ padding: 1em 1em 1em 1em;
 
 .ClientWork-Banner {
   border-style: solid;
-  height: 20em;
+  height: 25em;
   /* font-weight: 600; */
   color: white;
   width: 90%;
@@ -539,10 +564,65 @@ padding: 1em 1em 1em 1em;
 }
 
 .ClientWork-Banner-IMG {
-  object-fit: fill;
-  height: 20em;
+  height: 25em;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
   position: relative;
 }
+
+
+
+.Contact-Header {
+  text-align: left;
+  font-size: 160px;
+  opacity: 0.7;
+  width: 100%;
+  position: absolute;
+  /* background-color: #29522d; */
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  padding: 0.3em;
+  font-family: 'Stardos Stencil', Courier, monospace;
+  }
+
+
+.BannerBar-IMG2 {
+  height: 16em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  /* filter: grayscale(30%); */
+  /* filter: brightness(50%); */
+  mix-blend-mode: lighten;
+}
+
+.BannerBar-Inner2 {
+  border-style: solid;
+  height: 16em;
+  /* font-weight: 600; */
+  color: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom:3em;
+  max-width: 1200px;
+  position: relative;
+  background-color: #29522d;
+  }
+
+  .BannerBar-Header2 {
+    text-align: center;
+    font-size: 44px;
+    width: 100%;
+    position: absolute;
+    /* background-color: #29522d; */
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    padding: 0.3em;
+    font-family: 'Stardos Stencil', Courier, monospace;
+    }

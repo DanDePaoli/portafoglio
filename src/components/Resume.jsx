@@ -11,8 +11,10 @@ import { FaAws, FaSalesforce, FaJira, FaWordpress } from "react-icons/fa";
 var Resume = (props) => (
 
   <div>
+
+
     <div className="ClientWork-Banner" id="onload-AboutMe"> <a name="Resume">
-      <img src="https://ddpgithubprojects.s3-us-west-2.amazonaws.com/Forest.jpg" className='ClientWork-Banner-IMG' />
+      <img src="https://ddpgithubprojects.s3-us-west-2.amazonaws.com/PillarsChile.JPG" className='ClientWork-Banner-IMG' />
       <h1 className="AboutMe-Contact-Header">     <div className="Contact-Header">Resume</div></h1></a> </div>
 
 

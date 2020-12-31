@@ -183,7 +183,9 @@ font-weight: bold;
 
 .AboutMe-intro-text {
   font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .AboutMe-ThanksForStoppingBy{
@@ -290,6 +292,7 @@ animation-duration: 2.5s;
 
   .Resume-CareerTimeline {
     width: 75%;
+    padding-top: 3em;
     margin: auto;
     position: relative;
     height: 15em;
@@ -525,7 +528,7 @@ h1.Projects-ProjectTitle {
 .Contact-Header {
   text-align: left;
   font-size: 160px;
-  opacity: 0.7;
+  opacity: 0.8;
   width: 100%;
   position: absolute;
   /* background-color: #29522d; */
@@ -542,8 +545,8 @@ font-size: 28px;
 opacity: 0.8;
 position: absolute;
 background-color: #29522d;
-top: 50%;
-left: 15%;
+top: 65%;
+left: 12%;
 border-radius: 10px;
 padding: 1em 1em 1em 1em;
 }
@@ -576,7 +579,7 @@ padding: 1em 1em 1em 1em;
 .Contact-Header {
   text-align: left;
   font-size: 160px;
-  opacity: 0.7;
+  opacity: 0.8;
   width: 100%;
   position: absolute;
   /* background-color: #29522d; */
@@ -589,19 +592,19 @@ padding: 1em 1em 1em 1em;
 
 
 .BannerBar-IMG2 {
-  height: 16em;
+  height: 18em;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
   position: relative;
   /* filter: grayscale(30%); */
-  /* filter: brightness(50%); */
+  filter: brightness(50%);
   mix-blend-mode: lighten;
 }
 
 .BannerBar-Inner2 {
   border-style: solid;
-  height: 16em;
+  height: 18em;
   /* font-weight: 600; */
   color: white;
   width: 90%;

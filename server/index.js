@@ -24,7 +24,6 @@ app.use(bodyParser.json());
 
 //ImageCarousel endpoint
 
-
 app.get('/suggestedPlaces', (req, res) => {
   console.log('get req working!');
   mongoICmodel.getPlaces((error, listings) => {
@@ -95,3 +94,5 @@ app.post('/rooms/:room_id/reservation', (req, res) => {
     });
   }
 });
+
+

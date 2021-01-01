@@ -286,7 +286,7 @@ animation-duration: 2.5s;
       text-align: center;
       font-family: 'Courier New', Courier, monospace;
       max-width: 1200px;
-      height: 110em;
+      height: 120em;
       position: relative;
     }
 
@@ -296,20 +296,21 @@ animation-duration: 2.5s;
     margin: auto;
     position: relative;
     height: 15em;
+    margin-top: 3em;
   }
 
   .Resume-Icon {
     text-align: left;
     position: absolute;
-    left: 4.5%;
+    left: 4.7%;
     border-radius: 40%;
     border-color: #29522d;
     background-color: white;
     border-width: 3px;
     border-style: solid;
-    height: 0.75em;
-    width: 0.75em;
-    top:52%
+    height: 0.9em;
+    width: 0.9em;
+    top:60%
   }
 
 
@@ -323,7 +324,7 @@ animation-duration: 2.5s;
     border-color: palegreen;
     border-width: 1px;
     border-style: solid;
-    height: 15em;
+    height: 18em;
 
   }
 
@@ -331,7 +332,7 @@ animation-duration: 2.5s;
     text-align: left;
     position: absolute;
     left: 10%;
-    top: 50%
+    top: 50%;
   }
 
   .Resume-OrgName {
@@ -362,7 +363,7 @@ animation-duration: 2.5s;
     height: 10em;
     margin: auto;
     position: relative;
-    margin-top: 5em;
+    margin-top: 8em;
 
   }
 

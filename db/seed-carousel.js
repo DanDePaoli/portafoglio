@@ -1,4 +1,7 @@
 
+
+// mongoimport -d ddpcarousel -c places --drop --file mongoseeddata.json
+
 const fs = require('fs');
 const v8 = require('v8');
 

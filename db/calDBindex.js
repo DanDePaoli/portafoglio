@@ -1,7 +1,15 @@
 var mysql = require('mysql');
 
+var runlocal = 'localhost';
+var runAWS = '54.213.63.161';
+// var connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'root',
+//   database: 'calendarrebuild'
+// });
+
 var connection = mysql.createConnection({
-  host: 'localhost',
+  host: `${runlocal}`,
   user: 'root',
   database: 'calendarrebuild'
 });

@@ -11,20 +11,21 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'build')));
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "http://dpaodevsite.s3-website-us-west-2.amazonaws.com"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
+var runlocal = 'localhost';
+var runAWS = '54.213.63.161';
 
-// app.use(express.static(path.join(__dirname,"../public")));
 
 app.use(bodyParser.json());
-//old express path using rooms and id
-// app.use('/rooms/:room_id', express.static(path.join(__dirname, '../public')));
 
-//unfinished do not use staticGzip
-// app.use('/rooms/:room_id', expressStaticGzip(path.join(__dirname, '../public')));
-
-//ImageCarousel endpoint
 
 app.get('/suggestedPlaces', (req, res) => {
+
   console.log('get req working!');
   mongoICmodel.getPlaces((error, listings) => {
     if (error) {

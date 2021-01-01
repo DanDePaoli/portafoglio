@@ -84,10 +84,9 @@ class CarouselApp extends React.Component {
 
   getListings() {
     // axios.get('/suggestedListings')
-    axios.get('/suggestedPlaces')
+    axios.get('http://54.213.63.161:3003/suggestedPlaces')
       .then((response) => {
         const suggestedListings = response.data[0].related_place;
-        console.log(suggestedListings);
         this.setState({ suggestedListings, isLoading: false });
         this.renderPage(1);
       })

@@ -39,9 +39,9 @@ this.add = this.add.bind(this);
 this.subtract = this.subtract.bind(this);
 }
 
-
+// $.get(`/rooms/${roomID}/reservation`, (data) => {
 getRoomData(roomID) {
-  $.get(`/rooms/${roomID}/reservation`, (data) => {
+  $.get(`http://54.213.63.161:3003/rooms/${roomID}/reservation`, (data) => {
     console.log("GET request succeed");
     this.setState({
       roomId: roomID,
@@ -71,7 +71,8 @@ postReservationData() {
     check_in: this.state.checkInDateMomentObj.format('YYYY-MM-DD'),
     check_out: this.state.checkOutDateMomentObj.format('YYYY-MM-DD')
   }
-  $.post(`/rooms/${this.state.roomId}/reservation`, reservation, () => {
+  // $.post(`/rooms/${this.state.roomId}/reservation`, reservation, () => {
+  $.post(`http://54.213.63.161:3003/rooms/${this.state.roomId}/reservation`, reservation, () => {
     console.log("POST request succeed");
     // clear the posted reservation data
     this.clearDate();

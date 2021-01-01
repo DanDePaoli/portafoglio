@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // hrsfsdc
-
+// mongoose.connect("mongodb://localhost/ddpcarousel", {
 mongoose.connect("mongodb://localhost/ddpcarousel", {
   useNewUrlParser: true,
   useUnifiedTopology: true,

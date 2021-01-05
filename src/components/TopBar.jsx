@@ -10,16 +10,16 @@ var Topbar = (props) => (
         <Header transparent title="Welcome" style={{color: 'white'} }>
             <Navigation>
                 <a href="#Hello">Hello</a>
-                <a href="#Resume">Resume</a>
                 <a href="#Portfolio">Portfolio</a>
+                <a href="#Resume">Resume</a>
                 <a href="#Contact">Contact</a>
             </Navigation>
         </Header>
         <Drawer title="Welcome">
             <Navigation>
                 <a href="#Hello">Hello</a>
-                <a href="#Resume">Resume</a>
                 <a href="#Portfolio">Portfolio</a>
+                <a href="#Resume">Resume</a>
                 <a href="#Contact">Contact</a>
             </Navigation>
         </Drawer>

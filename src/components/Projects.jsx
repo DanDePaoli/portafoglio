@@ -22,7 +22,7 @@ var Projects = (props) => (
 
       <img src="https://ddpgithubprojects.s3-us-west-2.amazonaws.com/IcelandLayercake2.jpg" className='ClientWork-Banner-IMG' />
 
-      <h1 className="AboutMe-Contact-Header">     <div className="Contact-Header">Recent Projects</div></h1></a> </div>
+      <h1 className="AboutMe-Contact-Header">     <div className="Contact-Header">Projects</div></h1></a> </div>
 
 
 
@@ -55,9 +55,9 @@ var Projects = (props) => (
           <div className="Projects-ProjectInnerRight">
 
             <Card style={{ width: '12rem' }}>
-              <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
+              <Card.Img style={{ width: '9rem', margin: 'auto', paddingTop: '1em'}} variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-                <a href="https://github.com/DanDePaoli/ImageCarouselRebuild" target="_blank"><Button variant="primary" className="Projects-GitHub">Go To Code</Button></a>
+                <a href="https://github.com/DanDePaoli/ImageCarouselRebuild" target="_blank"><Button variant="primary" className="Projects-GitHub" id="GitHub-Button">Go To Code</Button></a>
               </Card.Body>
             </Card>
 
@@ -98,9 +98,9 @@ var Projects = (props) => (
           <div className="Projects-ProjectInnerRight">
 
             <Card style={{ width: '12rem' }}>
-              <Card.Img variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
+              <Card.Img style={{ width: '9rem', margin: 'auto', paddingTop: '1em'}} variant="top" src="https://342sv54cwf1w32bxz36tm0bv-wpengine.netdna-ssl.com/wp-content/uploads/2020/06/github_PNG20.png" />
               <Card.Body>
-                <a href="https://github.com/DanDePaoli/CalendarRebuild/" target="_blank"><Button variant="primary" className="Projects-GitHub">Go To Code</Button></a>
+                <a href="https://github.com/DanDePaoli/CalendarRebuild/" target="_blank"><Button variant="primary" className="Projects-GitHub" id="GitHub-Button">Go To Code</Button></a>
               </Card.Body>
             </Card>
 

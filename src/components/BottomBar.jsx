@@ -13,12 +13,12 @@ var BottomBar = (props) => (
         </FooterDropDownSection>
         <FooterDropDownSection title="">
             <FooterLinkList>
-                <a href="#Resume">Resume</a>
+            <a href="#Portfolio">Portfolio</a>
             </FooterLinkList>
         </FooterDropDownSection>
         <FooterDropDownSection title="">
             <FooterLinkList>
-                <a href="#Contact">Contact</a>
+            <a href="#Resume">Resume</a>
             </FooterLinkList>
         </FooterDropDownSection>
         <FooterDropDownSection title="">

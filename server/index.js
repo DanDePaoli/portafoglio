@@ -6,16 +6,42 @@ const calDB = require('../db/calDBindex.js');
 const bodyParser = require('body-parser');
 const PORT = 3003;
 const moment = require('moment');
-
+const cors = require('cors');
 const app = express();
+
+//required for https
+// const fs = require('fs');
+// const key = fs.readFileSync('./key.pem');
+// const cert = fs.readFileSync('./cert.pem');
+// const https = require('https');
+// const server = https.createServer({key: key, cert: cert }, app);
+//required for https
+
+
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://dpaodevsite.s3-website-us-west-2.amazonaws.com"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "http://dpaodevsite.s3-website-us-west-2.amazonaws.com"); // update to match the domain you will make the request from
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
+//original working cors info for s3 site
+
+
+var whitelist = ['http://dpaodevsite.s3-website-us-west-2.amazonaws.com', 'https://d2w3j3wkqwi96r.cloudfront.net', 'https://www.dpao.dev', 'https://dpao.dev'];
+
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}
+
+app.options('*', cors());
 
 var runlocal = 'localhost';
 var runAWS = '54.213.63.161';
@@ -24,7 +50,7 @@ var runAWS = '54.213.63.161';
 app.use(bodyParser.json());
 
 
-app.get('/suggestedPlaces', (req, res) => {
+app.get('/suggestedPlaces', cors(corsOptions), (req, res) => {
 
   console.log('get req working!');
   mongoICmodel.getPlaces((error, listings) => {
@@ -49,7 +75,7 @@ app.listen(PORT, (error) => {
 
 //calendar enpoints
 
-app.get('/rooms/:room_id/reservation', (req, res) => {
+app.get('/rooms/:room_id/reservation', cors(corsOptions), (req, res) => {
   // declare query string
   let queryString = 'SELECT rooms.nightly_fee, rooms.rating, rooms.reviews, rooms.minimum_stay, rooms.maximum_guest, reservations.id, reservations.booked_date FROM rooms, reservations WHERE rooms.id = ? AND rooms.id = reservations.room_id ORDER BY reservations.booked_date;';
   // declare query params
@@ -67,7 +93,7 @@ app.get('/rooms/:room_id/reservation', (req, res) => {
 });
 
 // POST request to '/rooms/:room_id/reservation' route
-app.post('/rooms/:room_id/reservation', (req, res) => {
+app.post('/rooms/:room_id/reservation', cors(corsOptions),(req, res) => {
   // get the check_in date from request
   let check_in = moment(req.body.check_in);
   // get the check_out date from request

@@ -11,25 +11,20 @@ const app = express();
 
 //required for https
 // const fs = require('fs');
-// const key = fs.readFileSync('./key.pem');
-// const cert = fs.readFileSync('./cert.pem');
+// const key = fs.readFileSync('./keys/key.pem');
+// const cert = fs.readFileSync('./keys/cert.pem');
 // const https = require('https');
 // const server = https.createServer({key: key, cert: cert }, app);
 //required for https
 
-
+const fs = require('fs');
+const key = fs.readFileSync('./server/sslcert/key.pem', 'utf8');
+const cert = fs.readFileSync('./server/sslcert/cert.pem', 'utf8');
+const https = require('https');
+const server = https.createServer({key: key, cert: cert }, app);
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-// app.use(function(req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "http://dpaodevsite.s3-website-us-west-2.amazonaws.com"); // update to match the domain you will make the request from
-//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//   next();
-// });
-//original working cors info for s3 site
-
-
-var whitelist = ['http://dpaodevsite.s3-website-us-west-2.amazonaws.com', 'https://d2w3j3wkqwi96r.cloudfront.net', 'https://www.dpao.dev', 'https://dpao.dev'];
 
 var corsOptions = {
   origin: function (origin, callback) {
@@ -43,11 +38,37 @@ var corsOptions = {
 
 app.options('*', cors());
 
-var runlocal = 'localhost';
-var runAWS = '54.213.63.161';
-
 
 app.use(bodyParser.json());
+
+const sslServer = https.createServer(
+{
+  key: fs.readFileSync(path.join(__dirname, 'sslcert', 'key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, 'sslcert', 'cert.pem')),
+},
+app
+);
+
+
+
+
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "http://dpaodevsite.s3-website-us-west-2.amazonaws.com"); // update to match the domain you will make the request from
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
+//original working cors info for s3 site
+
+
+var whitelist = ['http://dpaodevsite.s3-website-us-west-2.amazonaws.com', 'https://d2w3j3wkqwi96r.cloudfront.net', 'https://www.dpao.dev', 'https://dpao.dev', 'https://54.213.63.161', 'https://info.dpao.dev'];
+
+
+
+// var runlocal = 'localhost';
+// var runAWS = '54.213.63.161';
+
+
+
 
 
 app.get('/suggestedPlaces', cors(corsOptions), (req, res) => {
@@ -62,14 +83,6 @@ app.get('/suggestedPlaces', cors(corsOptions), (req, res) => {
       res.status(200).send(listings);
     }
   });
-});
-
-app.listen(PORT, (error) => {
-  if (error) {
-    console.log('Failed Server Connection');
-  } else {
-    console.log(`Server listening on PORT: ${PORT}`);
-  }
 });
 
 
@@ -123,3 +136,12 @@ app.post('/rooms/:room_id/reservation', cors(corsOptions),(req, res) => {
 });
 
 
+// sslServer.listen(PORT, ()=> console.log(`SSL Server listening on PORT: ${PORT}`));
+
+app.listen(PORT, (error) => {
+  if (error) {
+    console.log('Failed Server Connection');
+  } else {
+    console.log(`Server listening on PORT: ${PORT}`);
+  }
+});

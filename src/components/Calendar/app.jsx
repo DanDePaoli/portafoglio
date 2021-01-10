@@ -5,6 +5,7 @@ import moment from 'moment';
 import Fees from './fees.jsx';
 import Options from './options.jsx';
 import PlaceInfo from './placeinfo.jsx';
+import calData from './dummydata.jsx';
 
 
 class CalendarApp extends React.Component {
@@ -38,47 +39,66 @@ this.handleMouseMove = this.handleMouseMove.bind(this);
 this.add = this.add.bind(this);
 this.subtract = this.subtract.bind(this);
 }
-
+// `https://54.213.63.161:3003/rooms/${roomID}/reservation`
 // $.get(`/rooms/${roomID}/reservation`, (data) => {
 getRoomData(roomID) {
-  $.get(`https://54.213.63.161:3003/rooms/${roomID}/reservation`, (data) => {
-    console.log("GET request succeed");
-    this.setState({
-      roomId: roomID,
-      allData : data,
-      nightly_fee : data[0].nightly_fee,
-      rating : data[0].rating,
-      reviews : data[0].reviews,
-      minimum_stay : data[0].minimum_stay,
-      maximum_guest : data[0].maximum_guest,
-      /*
-       * In the localhost database, the retrieved date is formated like 2020-09-01T07:00:00.000Z,
-       * as this date transformed to moment object, the date will be stay the same (2020-09-01).
-       * In the database pulled from the DockerHub, the retrieved date is formated like 2020-09-01T00:00:00.000Z,
-       * as this date transformed to moment object, the date will be ROUNDED to the last date (2020-08-31).
-       * Since the time zones are different, in order to prevent the dated rounded to the last date,
-       * we need to take out the time zone by using slice
-       */
-      booked_date : data.map(reservation => reservation.booked_date.slice(0, 10))
-    });
+
+  this.setState({
+    roomId: roomID,
+    allData : calData,
+    nightly_fee : calData[0].nightly_fee,
+    rating : calData[0].rating,
+    reviews : calData[0].reviews,
+    minimum_stay : calData[0].minimum_stay,
+    maximum_guest : calData[0].maximum_guest,
+    booked_date : calData.map(reservation => reservation.booked_date.slice(0, 10))
   });
+
+  // $.get(`/rooms/${roomID}/reservation`, (data) => {
+  //   // console.log("GET request succeed");
+  //   this.setState({
+  //     roomId: roomID,
+  //     allData : data,
+  //     nightly_fee : data[0].nightly_fee,
+  //     rating : data[0].rating,
+  //     reviews : data[0].reviews,
+  //     minimum_stay : data[0].minimum_stay,
+  //     maximum_guest : data[0].maximum_guest,
+  //     /*
+  //      * In the localhost database, the retrieved date is formated like 2020-09-01T07:00:00.000Z,
+  //      * as this date transformed to moment object, the date will be stay the same (2020-09-01).
+  //      * In the database pulled from the DockerHub, the retrieved date is formated like 2020-09-01T00:00:00.000Z,
+  //      * as this date transformed to moment object, the date will be ROUNDED to the last date (2020-08-31).
+  //      * Since the time zones are different, in order to prevent the dated rounded to the last date,
+  //      * we need to take out the time zone by using slice
+  //      */
+  //     booked_date : data.map(reservation => reservation.booked_date.slice(0, 10))
+  //   });
+  // });
+
 }
 
 // post the current reservation to the corresponding room with the current room id in state
 postReservationData() {
+
   // declare the reservation data to post
   let reservation = {
     check_in: this.state.checkInDateMomentObj.format('YYYY-MM-DD'),
     check_out: this.state.checkOutDateMomentObj.format('YYYY-MM-DD')
   }
+
+  console.log('Booked!  '+'Checkin: ' + reservation.check_in +'  Checkout: ' + reservation.check_in)
+
+  // `https://54.213.63.161:3003/rooms/${this.state.roomId}/reservation`
+  // `https://Portfolio-Backend-Data-1345882254.us-west-2.elb.amazonaws.com:3003/rooms/${this.state.roomId}/reservation`
   // $.post(`/rooms/${this.state.roomId}/reservation`, reservation, () => {
-  $.post(`https://54.213.63.161:3003/rooms/${this.state.roomId}/reservation`, reservation, () => {
-    console.log("POST request succeed");
-    // clear the posted reservation data
-    this.clearDate();
-    // get the updated data of the corresponding room
-    this.getRoomData(this.state.roomId);
-  });
+  // $.post(`/rooms/${this.state.roomId}/reservation`, reservation, () => {
+  //   console.log("POST request succeed");
+  //   // clear the posted reservation data
+  //   this.clearDate();
+  //   // get the updated data of the corresponding room
+  //   this.getRoomData(this.state.roomId);
+  // });
 }
 
 componentDidMount(){
@@ -89,14 +109,14 @@ componentDidMount(){
 }
 
 getCheckInDate(dateMomentObj) {
-  console.log("check in: ", dateMomentObj);
+  // console.log("check in: ", dateMomentObj);
   this.setState({
     checkInDateMomentObj: dateMomentObj
   });
 }
 
 getCheckOutDate(dateMomentObj) {
-  console.log("check out: ", dateMomentObj);
+  // console.log("check out: ", dateMomentObj);
   this.setState({
     checkOutDateMomentObj: dateMomentObj
   });

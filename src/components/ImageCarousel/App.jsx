@@ -8,6 +8,8 @@ import Carousel from './Carousel.jsx';
 import Header from './Header.jsx';
 import NavButtons from './NavButtons.jsx';
 import Modal from './Modal.jsx';
+import carouselData from './dummydata.jsx';
+
 
 const HeadingWrapper = styled.div`
   align-items: center;
@@ -58,7 +60,8 @@ class CarouselApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      suggestedListings: [],
+      // suggestedListings: [],
+      suggestedListings: carouselData[0].related_place,
       isLoading: true,
       renderedListings: [],
       modalTriggered: false,
@@ -81,18 +84,26 @@ class CarouselApp extends React.Component {
   componentDidMount() {
     this.getListings();
   }
+  // 'https://54.213.63.161:3003/suggestedPlaces'
+  // 'https://Portfolio-Backend-Data-1345882254.us-west-2.elb.amazonaws.com:3003/suggestedPlaces'
 
   getListings() {
-    // axios.get('/suggestedListings')
-    axios.get('https://54.213.63.161:3003/suggestedPlaces')
-      .then((response) => {
-        const suggestedListings = response.data[0].related_place;
-        this.setState({ suggestedListings, isLoading: false });
-        this.renderPage(1);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    this.setState({isLoading: false });
+    this.renderPage(1);
+//remove above when using live api
+
+    // axios.get('/suggestedPlaces')
+    //   .then((response) => {
+    //     // const suggestedListings = carouselData[0].related_place;
+    //     //static dummy data (api response below)
+    //     const suggestedListings = response.data[0].related_place;
+    //     this.setState({ suggestedListings, isLoading: false });
+    //     this.renderPage(1);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //     //uncomment when using non-static data
+    //   });
   }
 
   hideModal() {

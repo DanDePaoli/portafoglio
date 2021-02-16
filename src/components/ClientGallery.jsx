@@ -80,8 +80,8 @@ class OliGallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mainImage: "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryGalleryExperience.jpg",
-      images: [ "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryGalleryExperience.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryEditor.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryImageDetails.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryMyExhibit.jpg" ]
+      mainImage: "https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-shopper.jpg",
+      images: [ "https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-shopper.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-exhibit.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-home.jpg", "https://oli-gallery.s3-us-west-2.amazonaws.com/OliGalleryEditor.jpg" ]
     }
   }
 

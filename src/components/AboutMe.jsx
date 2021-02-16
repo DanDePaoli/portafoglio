@@ -27,7 +27,7 @@ var AboutMe = (props) => (
 
     <div className="AboutMe-intro" id="onload-Primary">
       <a name="Hello"></a>
-      <p className='AboutMe-intro-text'>Dear reader, thanks for stopping by.  This is a simple site I've thrown together to showcase my recent coding projects and freelance work.  All photos are my own.  While I am no Leonardo, I do believe in the importance of being a multi-dimensional professional and human being.  It is this hunger for knowledge that has led me to leave behind my career in marketing to pursue my passion for engineering.</p>
+      <p className='AboutMe-intro-text'>Dear reader, thanks for stopping by.  This is a simple site I've thrown together to showcase my recent coding projects and freelance work.  All photos are my own.  While I am no Leonardo, I do believe in the importance of being a multi-dimensional professional and human being.  It is this joy of challenge and lifelong learning that has led me to leave behind my career in marketing to pursue my passion for engineering.</p>
     </div>
 
   </div>

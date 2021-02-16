@@ -34,9 +34,9 @@ var ClientWork = (props) => (
             <h1 className="Projects-ProjectTitle">Client:  <img className='ClientWork-Logo' src="https://oli-gallery.s3-us-west-2.amazonaws.com/Oli-Logo-STACKED-Brown-Gallery.png"></img></h1>
             <ul className="Projects-Bullets">
               <li className='Projects-Bullets'>Oli Gallery is a modern online art co-op where studio artists (painters, sculpters, etc) can present and sell their work to new audiences</li>
-              <li className='Projects-Bullets'>Designed by artists for artists with simplicity and elegence in mind</li>
-              <li className='Projects-Bullets'>I'm building it from scratch using Node, React, Express, Mysql and deployed on AWS</li>
-              <li className='Projects-Bullets'>This modern full-stack web application includes features for image editing, ecommerce, and art discovery</li>
+              <li className='Projects-Bullets'>Built MVP app from scratch with Oli Gallery's founders including viewing galleries, e-commerce experience, image editor, and secure user login</li>
+              <li className='Projects-Bullets'>Technologies include Javascript, React Native, React.js, Node.js, HTML/CSS, Express, MySQL, Stripe, AWS, and more</li>
+              <li className='Projects-Bullets'>Public access application and mobile app are in progress</li>
 
             </ul>
             <div className="Resume-SkillChip"><Chip><DiNodejsSmall /> Node.js</Chip> <Chip><DiReact /> React.js</Chip> <Chip><DiHtml5 /> HTML/CSS</Chip> <Chip><DiNodejsSmall /> Express</Chip> <Chip><DiMysql /> MySQL</Chip>  <Chip><FaAws /> AWS</Chip> <Chip><SiNginx /> NGINX</Chip></div>

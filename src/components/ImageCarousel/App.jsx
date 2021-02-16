@@ -81,6 +81,7 @@ class CarouselApp extends React.Component {
 
   }
 
+
   componentDidMount() {
     this.getListings();
   }

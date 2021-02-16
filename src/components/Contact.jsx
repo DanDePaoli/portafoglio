@@ -7,7 +7,7 @@ var Contact = (props) => (
 
 
 
-  <div style={{ height: 'auto', position: 'relative', marginBottom: '3em', PaddingBottom: '5em' }}>
+  <div style={{ height: 'auto', position: 'relative', marginBottom: '3em', PaddingBottom: '5em', minWidth: '90em' }}>
 
     <div className="Contact" id="onload-AboutMe"> <a name="Contact">
 

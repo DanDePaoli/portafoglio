@@ -10,7 +10,7 @@ import { FaAws, FaSalesforce, FaJira, FaWordpress } from "react-icons/fa";
 
 var Resume = (props) => (
 
-  <div>
+  <div style={{ minWidth: '90em' }}>
 
 
     <div className="ClientWork-Banner" id="onload-AboutMe"> <a name="Resume">

@@ -127,6 +127,7 @@ font-weight: bold;
   /* display: grid; */
   margin: auto;
   border-width: thick;
+  min-width: 90em;
   /* grid-template-areas: "a"
                        "b"
                        "c"; */
@@ -288,6 +289,7 @@ animation-duration: 2.5s;
       max-width: 1200px;
       height: 120em;
       position: relative;
+
     }
 
   .Resume-CareerTimeline {
@@ -297,6 +299,7 @@ animation-duration: 2.5s;
     position: relative;
     height: 15em;
     margin-top: 3em;
+
   }
 
   .Resume-Icon {

@@ -7,7 +7,7 @@ var AboutMe = (props) => (
 
 
 
-  <div style={{ height: '66em', position: 'relative', marginBottom: '3em' }}>
+  <div style={{ height: '66em', minWidth: '90em', position: 'relative', marginBottom: '3em' }}>
 
     <div className="AboutMe-Quote" id="onload-Headshot">
       <h1 className="AboutMe-Quote"><em>"The noblest pleasure is the joy of understanding"</em><br></br>-Leonardo Da Vinci</h1>
